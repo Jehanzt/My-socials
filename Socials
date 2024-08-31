@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stalker Alert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 24px;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Huwag I-click ang Link!</h1>
+    <a href="#" onclick="expose()">I-click mo ako</a>
+
+    <script>
+        function expose() {
+            alert("Bakit mo ako ini-stalk? Crush mo ako, no!");
+            document.body.innerHTML = `
+                <h1>Ikaw ang stalker!</h1>
+                <p>Wala ka nang kawala.</p>
+                <img src="https://i.imgci.com/d0c4/4dd2b0f25d6a1f7c.png" alt="Meme">
+            `;
+        }
+    </script>
+</body>
+</html>
